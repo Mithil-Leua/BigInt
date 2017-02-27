@@ -1,0 +1,36 @@
+			C++ Big Integer Library
+	Written and maintained by Mithil Leua<hungrymithil@gmail.com>
+
+You can use this library in a C++ program to do simple arithmetic on integers of size
+limited only by your computer's memory.  
+The library provides bigint class that represent integers.  
+
+Follows a assembly like arithmetic , rather than normal approach.
+	    #include "BigIntegerLibrary.hh"
+	    BigInteger a("65536");
+	    a.multiply(a);
+
+The code in `test.cc' demonstrates the most important features of the library.
+To get started quickly, read the code and explanations in that file and run it.
+If you want more detail or a feature not shown in `sample.cc', consult the
+consult the actual header and source files.
+
+This library emphasizes ease of use and clarity of implementation over speed.The code is
+intended to be reasonably portable across computers and modern C++ compilers; in
+particular, it uses whatever word size the computer provides (32-bit, 64-bit, or
+otherwise).
+
+Compiling programs that use the library
+---------------------------------------
+Just include "bigint.cc" to your program, that would be fine.
+
+
+Bugs and enhancements
+---------------------
+If you find a bug, please report it, whether it comes in the form of compiling
+trouble, a mathematically inaccurate result, or a memory-management blunder.
+You are also welcome to request enhancements.Since it is pretty basic library,
+other suggestions are welcome as well. 
+
+I would be delighted to hear from you if you like this library or find a good use for it. 
+
